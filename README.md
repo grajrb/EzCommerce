@@ -23,7 +23,7 @@ npm install
 ### Running the Application
 To start the development server:
 ng serve
-Navigate to http://localhost:4200/. The application will automatically reload if you change any source files.
+Navigate to http://localhost:3000/. The application will automatically reload if you change any source files.
 
 ## Backend Setup
 
@@ -41,7 +41,7 @@ npx json-server db.json
 The backend server will run at [http://localhost:3000/](http://localhost:3000/) by default.  
 To customize the port, use the `--port` flag:
 ```
-npx json-server db.json --port 4000
+npx json-server db.json --port 3000
 ```
 
 ### Customizing the Backend
