@@ -1,0 +1,239 @@
+{
+  "seller": [
+    {
+      "name": "tom",
+      "password": "Abcd1234@",
+      "email": "tom@seller.com",
+      "id": 1
+    },
+    {
+      "name": "Rocky",
+      "password": "Abcd1234@",
+      "email": "rocky@seller.com",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "iphone 14 Pro",
+      "price": "139900",
+      "color": "Aliceblue",
+      "category": "Mobiles",
+      "image": "https://freebrowsinglink.b-cdn.net/wp-content/uploads/2022/09/iPhone-14.jpg",
+      "description": "Good Product But not good for your Pocket.",
+      "id": 1
+    },
+    {
+      "name": "Apple Watch Ultra",
+      "price": "83499",
+      "color": "Orangered",
+      "category": "Watches",
+      "image": "https://m.media-amazon.com/images/I/91z5KuonXrL._SL1500_.jpg",
+      "description": " Rugged and capable, built to meet the demands of endurance athletes, outdoor adventurers and water sports enthusiasts — with a specialised strap for each.",
+      "id": 2
+    },
+    {
+      "name": "Macbook Pro 16",
+      "price": "129400",
+      "color": "Silver",
+      "category": "Laptops",
+      "image": "https://www.smartprix.com/bytes/wp-content/uploads/2021/10/M1X-16-inch-MacBook-Pro.jpg",
+      "description": "The 13-inch MacBook Pro laptop is a portable powerhouse. Get more done faster with a next-generation 8-core CPU, 10-core GPU and up to 24GB of unified memory.",
+      "id": 3
+    },
+    {
+      "name": "ipad Pro",
+      "price": "118690",
+      "color": "Grey",
+      "category": "Tablets",
+      "image": "https://m.media-amazon.com/images/I/81c+9BOQNWL._SL1500_.jpg",
+      "description": "Brilliant 11-inch Liquid Retina display with Pro Motion, True Tone, and P3 wide color",
+      "id": 4
+    },
+    {
+      "name": "Samsung Galaxy watch",
+      "price": "44999",
+      "color": "Black",
+      "category": "Smart Watch",
+      "image": "https://i.gadgets360cdn.com/products/large/samsung-galaxy-watch-5-pro-samsung-db-549x800-1660139504.jpg",
+      "description": "A much larger display and a battery that can literally last for days.",
+      "id": 5
+    },
+    {
+      "name": "Samsung Galaxy Book",
+      "price": "120000",
+      "color": "Grey",
+      "category": "Laptops",
+      "image": "https://m.media-amazon.com/images/I/61vfSiIaCpL._SL1500_.jpg",
+      "description": "The quick share feature is convenient way to wirelessly send files across Samsung Galaxy devices.",
+      "id": 6
+    },
+    {
+      "name": "Samsung Galaxy Fold",
+      "price": "154998",
+      "color": "Beige",
+      "category": "Mobiles",
+      "image": "https://m.media-amazon.com/images/I/714QNdK8BWL._SL1500_.jpg",
+      "description": "Do more than more with Multi View. Whether toggling between texts or catching up on emails, take full advantage of the expansive Main Screen with Multi View.",
+      "id": 7
+    },
+    {
+      "name": "Nikon D780 DSLR",
+      "price": "193990",
+      "color": "Black",
+      "category": "Camera",
+      "image": "https://m.media-amazon.com/images/I/811PR9chKyL._SL1500_.jpg",
+      "description": "The D780 is capable of bringing every spectacular vision to life and inspiring completely new ways to create.",
+      "id": 8
+    },
+    {
+      "name": "Olympus Mark-III",
+      "price": "140606",
+      "color": "Black",
+      "category": "Camera",
+      "image": "https://m.media-amazon.com/images/I/715HqsRyLQL._SL1500_.jpg",
+      "description": "Indeciso fra Olympus OMD M5 Mark III e Panasonic Lumix G9, alla fine ho optato per la M5.",
+      "id": 9
+    },
+    {
+      "name": "k&j DJI Pro",
+      "price": "139300",
+      "color": "White",
+      "category": "Drone",
+      "image": "https://m.media-amazon.com/images/I/61QVRzoQtWL._SL1236_.jpg",
+      "description": "Weighing less than 249 g, Mini 3 Pro doesn't require registration in most countries and regions. The foldable and compact design also makes it easy to carry on any adventure.",
+      "id": 10
+    },
+    {
+      "name": "Dell Alienware",
+      "price": "367590",
+      "color": "Black",
+      "category": "Gaming Laptop",
+      "image": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/f2e14e53-c7bb-489d-8ab4-c29ec9d7cae4.__CR0,0,300,300_PT0_SX300_V1___.jpg",
+      "description": "Outplay your rivals and show them who's boss with an 18-inch gaming laptop featuring 13th Gen Intel Core processors and NVIDIA GeForce RTX 40 Series graphics, with more headroom to support overclocking without throttling.",
+      "id": 11
+    },
+    {
+      "name": "Skullcandy Evo",
+      "price": "26858",
+      "color": "Steelblue",
+      "category": "Headphones",
+      "image": "https://m.media-amazon.com/images/I/818c8Lnb8GL._SL1500_.jpg",
+      "description": "GO-ANYWHERE DESIGN. Thanks to rugged, innovative hinges that both fold flat and collapse, Hesh Evo easily goes wherever you go.",
+      "id": 12
+    },
+    {
+      "name": "3D Printer",
+      "price": "348899",
+      "color": "Brown",
+      "category": "Printer",
+      "image": "https://m.media-amazon.com/images/I/51BBYtC0y0L._SL1000_.jpg",
+      "description": "Industrial-grade Transmission Technology : We introduce industrial-grade transmission technology to desktop fabrication—steel guiderails made by CNC grinding at micron level are embedded in Artisan's linear modules.",
+      "id": 13
+    },
+    {
+      "name": "Apple Vision Pro",
+      "price": "290000",
+      "color": "White",
+      "category": "VR Glasses",
+      "image": "https://www.apple.com/newsroom/images/media/Apple-WWCD23-Vision-Pro-with-battery-230605_big.jpg.large.jpg",
+      "description": "A revolutionary spatial computer that seamlessly blends digital content with the physical world, while allowing users to stay present and connected to others. ",
+      "id": 14
+    },
+    {
+      "name": "Meta Quest 2",
+      "price": "39450",
+      "color": "White",
+      "category": "VR Glasses",
+      "image": "https://m.media-amazon.com/images/I/61tE7IcuLmL._SL1500_.jpg",
+      "description": "Quest 2 requires your Facebook account to log in, making it easy to meet up with friends in VR and discover communities around the world.",
+      "id": 15
+    },
+    {
+      "name": "iPhone 13 Mini",
+      "price": "94900",
+      "color": "Cornflowerblue",
+      "category": "Mobiles",
+      "image": "https://m.media-amazon.com/images/I/61iERbHlGPL._SL1500_.jpg",
+      "description": "Advanced dual-camera system with 12MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording.",
+      "id": 16
+    },
+    {
+      "name": "iPhone 13",
+      "price": "70000",
+      "color": "Darkolivegreen",
+      "category": "Mobiles",
+      "image": "https://m.media-amazon.com/images/I/61-r9zOKBCL._SL1500_.jpg",
+      "description": "Advanced dual-camera system with 12MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording.",
+      "id": 17
+    },
+    {
+      "name": "AirPods Max",
+      "price": "59900",
+      "color": "Silver",
+      "category": "Headphones",
+      "image": "https://m.media-amazon.com/images/I/81IfN-Rw8uL._SL1500_.jpg",
+      "description": "Magical experience with effortless setup, on-head detection, and seamless switching between devices, Easily share audio between two sets of AirPods on your iPhone, iPad, iPod touch, or Apple TV.",
+      "id": 18
+    },
+    {
+      "name": "AirPods Pro",
+      "price": "24900",
+      "color": "White",
+      "category": "Earbuds",
+      "image": "https://m.media-amazon.com/images/I/61sRKTAfrhL._SL1500_.jpg",
+      "description": "Active Noise Cancellation reduces unwanted background noise, Adaptive Transparency lets outside sounds in while reducing loud environmental noise, Personalised Spatial Audio with dynamic head tracking places sound all around you.",
+      "id": 19
+    },
+    {
+      "name": "Microsoft Surface",
+      "price": "330900",
+      "color": "Dimgray",
+      "category": "Laptops",
+      "image": "https://m.media-amazon.com/images/I/61UGE9cZVlL._SL1500_.jpg",
+      "description": "Design, animate, and render at top speed. Step up to the award-winning Ampere — NVIDIA's 2nd gen RTX architecture, enabling ray-traced graphics and cutting-edge AI features from NVIDIA GeForce RTX 3050 Ti.",
+      "id": 20
+    }
+  ],
+  "users": [
+    {
+      "name": "surya",
+      "password": "Abcd1234@",
+      "email": "surya@user.com",
+      "id": 1
+    },
+    {
+      "name": "rahul",
+      "password": "Abcd1234@",
+      "email": "rahul@user.com",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "name": "iPhone 13",
+      "price": "70000",
+      "color": "Darkolivegreen",
+      "category": "Mobiles",
+      "image": "https://m.media-amazon.com/images/I/61-r9zOKBCL._SL1500_.jpg",
+      "description": "Advanced dual-camera system with 12MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording.",
+      "quantity": 1,
+      "productId": 17,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "name": "iphone 14 Pro",
+      "price": "139900",
+      "color": "Aliceblue",
+      "category": "Mobiles",
+      "image": "https://freebrowsinglink.b-cdn.net/wp-content/uploads/2022/09/iPhone-14.jpg",
+      "description": "Good Product But not good for your Pocket.",
+      "quantity": 1,
+      "productId": 1,
+      "userId": 1,
+      "id": 4
+    }
+  ],
+  "orders": []
+}

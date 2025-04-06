@@ -1,0 +1,13 @@
+.btn-primary {
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(61, 59, 59, 0.726) 0px 5px 15px;
+}
+
+.btn-primary:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    margin-top: 250px;
+}

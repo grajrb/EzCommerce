@@ -1,0 +1,106 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light" routerLink="/">
+            <div>
+                <div class="pyramid-loader">
+                    <div class="wrapper">
+                      <span class="side side1"></span>
+                      <span class="side side2"></span>
+                      <span class="side side3"></span>
+                      <span class="side side4"></span>
+                      <span class="shadow"></span>
+                    </div>  
+                  </div>
+                  <h3 class="heading-pos"><span class="e-head">E</span><span class="dash-head">-</span><span class="world1-head">NAO</span><span class="world2-head">LOGIC</span></h3>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-white rounded"></span>
+        </button>
+        <div [ngSwitch]="menuType" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul *ngSwitchCase="'default'" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="/"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="/user-auth"><b>Cart ({{cartItems}})</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="/seller-auth"><b>Seller</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="/user-auth"><b>Sign-in</b></a>
+                </li>
+            </ul>
+            <div *ngSwitchCase="'default'" class="search-bar-top">
+                <form class="d-flex input-group" role="search">
+                    <input class="form-control left-search" #searchInput type="search" (keyup)="searchProducts($event)"
+                        (blur)="hideSearch()" placeholder="Search" aria-label="Search">
+                    <span (click)="submitSearch(searchInput.value)" class="input-group-text right-search"><i
+                            class="fa-solid text-success fa-magnifying-glass"></i></span>
+                </form>
+                <ul class="suggested-result" *ngIf="searchResult">
+                    <li class="suggested-text" *ngFor="let item of searchResult">
+                        <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
+                    </li>
+                </ul>
+            </div>
+            <!--User Navbar-->
+            <ul *ngSwitchCase="'user'" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="/"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="cart-page"><b>Cart ({{cartItems}})</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="/seller-auth"><b>Seller</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#"><b>{{userName | titlecase}}</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="/my-orders"><b>My Orders</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light logout-btn" (click)="userLogout()"><b>Log Out</b></a>
+                </li>
+            </ul>
+            <div *ngSwitchCase="'user'" class="search-bar-top">
+                <form class="d-flex input-group" role="search">
+                    <input class="form-control left-search" #searchInput type="search" (keyup)="searchProducts($event)"
+                        (blur)="hideSearch()" placeholder="Search" aria-label="Search">
+                    <span (click)="submitSearch(searchInput.value)" class="input-group-text right-search"><i
+                            class="fa-solid text-success fa-magnifying-glass"></i></span>
+                </form>
+                <ul class="suggested-result" *ngIf="searchResult">
+                    <li class="suggested-text" *ngFor="let item of searchResult">
+                        <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Seller Navbar-->
+            <ul *ngSwitchCase="'seller'" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="/seller-home"><b>Product List</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="seller-add-product"><b>Add Product</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink=""><b>{{sellerName | titlecase}}</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link logout-btn text-light" (click)="logout()"><b>Log out</b></a>
+                </li>
+            </ul>
+            <form *ngSwitchCase="'seller'" class="d-flex input-group w-25" role="search">
+                <input disabled class="form-control left-search" type="search" placeholder="Search Product" aria-label="Search">
+                <span class="input-group-text right-search"><i
+                        class="fa-solid text-info fa-magnifying-glass"></i></span>
+            </form>
+        </div>
+    </div>
+</nav>
+

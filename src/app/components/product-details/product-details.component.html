@@ -1,0 +1,39 @@
+<div class="product-details mt-5" *ngIf="productData">
+    <div class="row">
+        <div class="col-6">
+            <img class="product-image" src="{{productData.image}}" (appGetZoomPosition)="onZoomImage($event)"
+                alt="Product...">
+        </div>
+        <div class="col-6">
+            <div class="details">
+                <h1>{{productData.name}}</h1>
+                <h3>Price : &#8377; {{productData.price}}</h3>
+                <div class="d-flex align-items-center">
+                    <span class="text-danger"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-regular fa-star"></i></span>
+                    <h6 class="text-success m-1 ms-2">{{productData.id}}00+ Reviews</h6>
+                </div>
+                <div class="d-flex align-items-center mt-2 mb-3">
+                    Color : <h5 [style.backgroundColor]="productData.color" class="product-color ms-4"></h5>
+                </div>
+                <h6>Category: {{productData.category}}</h6>
+                <p class="mt-3 mb-5">Description: {{productData.description}}</p>
+                <div class="input-group w-25">
+                    <button class="minus-product" (click)="handleQuantity('min')"><i
+                            class="fa-solid text-danger fa-minus"></i></button>
+                    <input class="form-control product-count" type="text" value="{{productQuantity}}" />
+                    <button class="plus-product" (click)="handleQuantity('plus')"><i
+                            class="fa-solid text-success fa-plus"></i></button>
+                </div>
+                <div class="action-buttons mt-5">
+                    <button *ngIf="!removeCart" (click)="AddToCart()" class="cart-button btn btn-outline-warning">Add to Cart</button>
+                    <button *ngIf="removeCart" (click)="removeToCart(productData.id)" class="cart-button btn btn-outline-danger">Remove to Cart</button>
+                    <button (click)="AddToCart()" class="buy-button btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+            <app-zoom-image-viewer *ngIf="coordinates" [coordinates]="coordinates"
+                image="{{productData.image}}"></app-zoom-image-viewer>
+        </div>
+    </div>
+</div>

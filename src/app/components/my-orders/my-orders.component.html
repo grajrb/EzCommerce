@@ -1,0 +1,44 @@
+<div class="my-orders mt-4">
+    <h1 class="text-center">My Orders</h1>
+    <div class="card order-card">
+        <div class="table-head">
+            <div>
+                <span>Orders</span>
+            </div>
+            <div>
+                <span>Order Id</span>
+            </div>
+            <div>
+                <span>Price</span>
+            </div>
+            <div>
+                <span>Status</span>
+            </div>
+            <div>
+                <span>Cancel Order</span>
+            </div>
+        </div>
+        <div class="mt-4 mb-4" *ngFor="let order of orderData">
+            <div class="table-base">
+                <div>
+                    <img class="truck-img"
+                        src="https://static.vecteezy.com/system/resources/previews/010/750/434/non_2x/fast-shipping-delivery-truck-icon-on-white-background-delivery-truck-sign-fast-delivery-symbol-flat-style-vector.jpg"
+                        alt="">
+                </div>
+                <div>
+                    <span>#{{order.id}}</span>
+                </div>
+                <div>
+                    <span>&#8377; {{order.totalPrice}}</span>
+                </div>
+                <div>
+                    <span class="text-success">In Progress</span>
+                </div>
+                <div>
+                    <button class="btn btn-outline-danger" (click)="cancelOrder(order.id)">Cancel Order</button>
+                </div>
+            </div><hr>
+        </div>
+    </div>
+
+</div>

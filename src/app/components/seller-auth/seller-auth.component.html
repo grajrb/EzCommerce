@@ -1,0 +1,46 @@
+<div class="row mt-5">
+    <!--Sign-Up Form-->
+
+    <div *ngIf="!showLogin" class="col-12 d-flex justify-content-center">
+        <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+            <h2 class="text-primary ms-3">Seller Sign-Up</h2>
+            <div class="input-group mt-4">
+                <span class="input-group-text"><i class="fa-solid text-primary fa-user"></i></span>
+                <input class="form-control" type="text" ngModel name="name" placeholder="Username">
+            </div>
+            <div class="input-group mt-4">
+                <span class="input-group-text"><i class="fa-solid text-primary fa-eye"></i></span>
+                <input class="form-control" type="password" ngModel name="password" placeholder="Password">
+            </div>
+            <div class="input-group mt-4 mb-4">
+                <span class="input-group-text"><i class="fa-solid text-primary fa-envelope"></i></span>
+                <input class="form-control" type="email" ngModel name="email" placeholder="Enter Email">
+            </div>
+            <div class="ms-5 mb-4">
+                <button class="sign-btn btn ms-5 btn-outline-success">Sign-Up</button>
+            </div>
+            <a (click)="openLogin()">Already Have Account? Click to <span class="text-primary login-cu">Login</span></a>
+        </form>
+    </div>
+
+    <!--Login Form-->
+
+    <div *ngIf="showLogin" class="col-12 d-flex justify-content-center">
+        <form #sellerLogin="ngForm" (ngSubmit)="Login(sellerLogin.value)">
+            <h2 class="text-primary ms-3">Seller Login</h2>
+            <div class="input-group mt-4">
+                <span class="input-group-text"><i class="fa-solid text-primary fa-envelope"></i></span>
+                <input class="form-control" type="email" ngModel name="email" placeholder="Enter Email">
+            </div>
+            <div class="input-group mt-4 mb-4">
+                <span class="input-group-text"><i class="fa-solid text-primary fa-eye"></i></span>
+                <input class="form-control" type="password" ngModel name="password" placeholder="Password">
+            </div>
+            <p class="text-danger mb-2"> {{authError}} </p>
+            <div class="ms-5 mb-4">
+                <button class="sign-btn btn ms-5 btn-outline-success">Sign-Up</button>
+            </div>
+            <a (click)="openSignUp()">Don't Have Account? Click to <span class="text-primary login-cu">Sign-Up</span></a>
+        </form>
+    </div>
+</div>

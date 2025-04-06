@@ -1,0 +1,35 @@
+.carousel-img {
+    object-fit: contain;
+    height: 600px;
+    width: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba(220, 220, 220, 0.233);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.product-card {
+    background-color: rgba(240, 248, 255, 0.418);
+    border: none;
+    box-shadow: rgba(105, 105, 105, 0.35) 0px 5px 15px;
+}
+
+.product-item-img {
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+}
+
+.product-item-img:hover {
+    transform: scale(1.1);
+}
+
+.product-details, .product-item {
+    text-align: center;
+}
+
+.view-det-btn {
+    text-decoration: none;
+}

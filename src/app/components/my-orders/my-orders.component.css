@@ -1,0 +1,35 @@
+.my-orders {
+    margin-bottom: 400px;
+}
+
+.truck-img {
+    height: 60px;
+    width: 120px;
+}
+
+.order-card {
+    margin: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.table-head {
+    font-size: large;
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.table-base {
+    font-size: large;
+    padding: 10px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,57 @@
+<div class="checkout mt-4">
+    <h1 class="text-center">Checkout</h1>
+    <h6 class="text-success text-center">{{orderMsg}}</h6>
+    <div class="row mt-4">
+        <div class="col-5 ms-5">
+            <div class="card shipping-card d-flex align-items-center pt-4 pb-4">
+                <h3>Add shipping address</h3>
+                <form #orderData="ngForm" (ngSubmit)="orderNow(orderData.value)">
+                    <input type="text" class="form-control mt-3 mb-3" name="email" placeholder="Enter User Email"
+                        ngModel />
+                    <input type="text" class="form-control mt-3 mb-3" name="Enter Your Address"
+                        placeholder="Enter User Address" ngModel />
+                    <input type="text" class="form-control mt-3 mb-3" name="Enter Your Contact"
+                        placeholder="Enter contact details" ngModel />
+                    <button class="btn ms-5 btn-outline-success">Order Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-5 mt-5">
+            <div class="card d-flex align-items-center h-75 justify-content-center border-0">
+                <h3>Total Amount: &#8377; {{totalPrice}}</h3>
+                <h4>Payment Method</h4>
+                <p class="mb-0"><i class="fa-solid text-warning fa-circle-chevron-down fa-lg"></i></p>
+                <h4 class="mt-0 text-info"><b>Pay on delivery</b></h4>
+                <div class="loader mt-5">
+                    <div class="box box0">
+                        <div></div>
+                    </div>
+                    <div class="box box1">
+                        <div></div>
+                    </div>
+                    <div class="box box2">
+                        <div></div>
+                    </div>
+                    <div class="box box3">
+                        <div></div>
+                    </div>
+                    <div class="box box4">
+                        <div></div>
+                    </div>
+                    <div class="box box5">
+                        <div></div>
+                    </div>
+                    <div class="box box6">
+                        <div></div>
+                    </div>
+                    <div class="box box7">
+                        <div></div>
+                    </div>
+                    <div class="ground">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

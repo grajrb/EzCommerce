@@ -1,0 +1,42 @@
+<div class="container mt-5 bg-success-subtle p-4">
+    <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
+        <div class="d-flex justify-content-center">
+            <h1>Update Product</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p class="text-success"><b> {{productMessage}} </b></p>
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="form-group col-6">
+                <label><b>Product Name :</b></label>
+                <input type="text" placeholder="Enter Product Name" class="form-control" name="name" ngModel="{{productData?.name}}">
+            </div>
+            <div class="form-group col-6">
+                <label><b>Product Price :</b></label>
+                <input type="text" placeholder="Enter Product Price" class="form-control" name="price" ngModel="{{productData?.price}}">
+            </div>
+        </div>
+        <div class="form-group mt-3 mb-3">
+            <label><b>Product Color :</b></label>
+            <input type="email" class="form-control" placeholder="Enter Product Color" name="color" ngModel="{{productData?.color}}">
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="form-group col-6">
+                <label><b>Product Category :</b></label>
+                <input type="text" placeholder="Enter Product Category" class="form-control" name="category" ngModel="{{productData?.category}}">
+            </div>
+            <div class="form-group col-6">
+                <label><b>Image URL :</b></label>
+                <input type="text" placeholder="Enter Product Image URL" class="form-control" name="image" ngModel="{{productData?.image}}">
+            </div>
+        </div>
+        <div class="form-group mt-3 mb-3">
+            <label><b>Product Description :</b></label>
+            <textarea placeholder="Enter Product Description" cols="30" rows="5" class="form-control" name="description" ngModel="{{productData?.description}}"></textarea>
+        </div>
+        <div class="d-flex justify-content-center mt-3 mb-3">
+            <button class="btn btn-outline-success"><b>Submit</b></button>
+        </div>
+    </form>
+</div>
+
