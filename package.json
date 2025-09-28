@@ -1,13 +1,23 @@
 {
   "name": "ecommerce-mern",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "MERN E-commerce application (client + server)",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client start",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "npm --prefix client run build",
+    "start:server": "NODE_ENV=production npm --prefix server start"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "mern",
+    "ecommerce"
+  ],
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
